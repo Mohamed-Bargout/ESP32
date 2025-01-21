@@ -1,0 +1,4 @@
+dependencies:
+  espressif/ssd1306: "^1.0.5"
+  idf:
+    version: ">=4.1.0"
