@@ -1,0 +1,81 @@
+# ESP32 Projects
+
+This repository contains various ESP32 projects, including a series of assignments related to real-time concepts.
+
+## Folder Structure
+├── Real Time Concepts Course/
+│   ├── Assignment 1/
+│   │   └── main/
+│   │       └── main.c
+│   ├── Assignment 2/
+│   │   └── main/
+│   │       └── main.c
+│   ├── Assignment 3/
+│   │   └── main/
+│   │       └── main.c
+│   └── Assignment 4/
+│       └── main/
+│           └── main.c
+
+## Real Time Concepts Assignments
+
+This section details the assignments completed as part of the "Real Time Concepts Course," which focuses on using FreeRTOS to implement real-time systems.
+
+*   **Assignment 1: Basic Task Scheduling with LEDs:** This assignment introduces basic task scheduling in FreeRTOS.  The goal is to implement three tasks, each associated with an LED.  Each task has a defined release time, period, execution time, and number of repetitions. The LEDs provide a visual representation of the task states:
+    *   **LED OFF:** Task is not ready to execute.
+    *   **LED ON (Steady):** Task is ready to execute.
+    *   **LED Blinking:** Task is currently executing.
+
+*   **Assignment 2:** 
+*   **Assignment 3:** 
+*   **Assignment 4:** 
+
+## Building and Running the Assignments
+
+Each assignment is contained within its own folder. To build and run an assignment, follow these steps:
+
+1.  **Install ESP-IDF:**  Make sure you have the ESP-IDF installed on your system.
+
+2.  **Export ESP-IDF Path:** Open a terminal and export the ESP-IDF path:
+
+    ```bash
+    . $HOME/esp/esp-idf/export.sh
+    ```
+
+    (Adjust the path if your ESP-IDF installation directory is different.)
+
+3.  **Navigate to Assignment Folder:** Change the directory to the specific assignment folder you want to build:
+
+    ```bash
+    cd "Real Time Concepts Course/Assignment 1"
+    ```
+
+4.  **Set Target:** Set the target to esp32:
+
+    ```bash
+    idf.py set-target esp32
+    ```
+
+5.  **Configure (FreeRTOS):** Configure the project to enable FreeRTOS:
+
+    ```bash
+    idf.py menuconfig
+    ```
+
+6.  **Build:** Build the project:
+
+    ```bash
+    idf.py build
+    ```
+
+7.  **Flash:** Flash the binaries to your ESP32 board. Replace `PORT` with the actual serial port your ESP32 is connected to (`/dev/ttyUSB0` or `COM3`):
+
+    ```bash
+    idf.py -p PORT flash
+    ```
+
+8.  **Monitor:** Open the serial monitor to view the output from your ESP32:
+
+    ```bash
+    idf.py -p PORT monitor
+    ```
