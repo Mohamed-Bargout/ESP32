@@ -19,7 +19,7 @@ This repository contains various ESP32 projects, including a series of assignmen
 
 ## Real Time Concepts Assignments
 
-This section details the assignments completed as part of the "Real Time Concepts Course," which focuses on using FreeRTOS to implement real-time systems.
+This section details the assignments completed as part of the "Real Time Concepts" Course at the University of Stuttgart, which focuses on using FreeRTOS to implement real-time systems.
 
 *   **Assignment 1: Basic Task Scheduling with LEDs:** This assignment introduces basic task scheduling in FreeRTOS.  The goal is to implement three tasks, each associated with an LED.  Each task has a defined release time, period, execution time, and number of repetitions. The LEDs provide a visual representation of the task states:
     *   **LED OFF:** Task is not ready to execute.
