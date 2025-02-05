@@ -26,7 +26,15 @@ This section details the assignments completed as part of the "Real Time Concept
     *   **LED ON (Steady):** Task is ready to execute.
     *   **LED Blinking:** Task is currently executing.
 
-*   **Assignment 2:** 
+**   **Assignment 2: Real-Time Schedulability Analysis:** This assignment focuses on analyzing the schedulability of real-time tasks. Three different schedulability checks were implemented:
+    *   **Schedulability Checks:** Three distinct methods for assessing task schedulability were implemented:
+        *   **Time Demand Analysis:** This method analyzes the total time a task requires to execute, considering interference from higher-priority tasks.
+        *   **Worst-Case Simulation:** This approach simulates the execution of tasks under worst-case scenarios to verify that deadlines are still met.
+        *   **Utilization Bound Test:** This test provides a sufficient (but not necessary) condition for schedulability based on the overall utilization of the CPU by the tasks.
+
+    *   **Acceptance Test:**  A crucial part of this assignment is the development of an acceptance test.  This test determines whether a new task can be safely added to the existing task set without violating the timing guarantees of any higher-priority tasks.  The acceptance test combines the results from the Time Demand Analysis, Worst-Case Simulation, and Utilization Bound Test to make this determination.
+    *   **SSD1306 Display Integration:** The display shows the results of each of the schedulability tests (Time Demand Analysis, Worst-Case Simulation, and Utilization Bound Test) for every task that is currently running in the system.
+
 *   **Assignment 3:** 
 *   **Assignment 4:** 
 
@@ -56,7 +64,7 @@ Each assignment is contained within its own folder. To build and run an assignme
     idf.py set-target esp32
     ```
 
-5.  **Configure (FreeRTOS):** Configure the project to enable FreeRTOS:
+5.  **Configure FreeRTOS:** Configure the project to enable FreeRTOS:
 
     ```bash
     idf.py menuconfig
