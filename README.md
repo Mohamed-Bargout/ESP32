@@ -26,7 +26,7 @@ This section details the assignments completed as part of the "Real Time Concept
     *   **LED ON (Steady):** Task is ready to execute.
     *   **LED Blinking:** Task is currently executing.
 
-**   **Assignment 2: Real-Time Schedulability Analysis:** This assignment focuses on analyzing the schedulability of real-time tasks. Three different schedulability checks were implemented:
+*   **Assignment 2: Real-Time Schedulability Analysis:** This assignment focuses on analyzing the schedulability of real-time tasks. Three different schedulability checks were implemented:
     *   **Schedulability Checks:** Three distinct methods for assessing task schedulability were implemented:
         *   **Time Demand Analysis:** This method analyzes the total time a task requires to execute, considering interference from higher-priority tasks.
         *   **Worst-Case Simulation:** This approach simulates the execution of tasks under worst-case scenarios to verify that deadlines are still met.
