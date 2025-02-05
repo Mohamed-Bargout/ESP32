@@ -31,7 +31,6 @@ This section details the assignments completed as part of the "Real Time Concept
         *   **Time Demand Analysis:** This method analyzes the total time a task requires to execute, considering interference from higher-priority tasks.
         *   **Worst-Case Simulation:** This approach simulates the execution of tasks under worst-case scenarios to verify that deadlines are still met.
         *   **Utilization Bound Test:** This test provides a sufficient (but not necessary) condition for schedulability based on the overall utilization of the CPU by the tasks.
-
     *   **Acceptance Test:**  A crucial part of this assignment is the development of an acceptance test.  This test determines whether a new task can be safely added to the existing task set without violating the timing guarantees of any higher-priority tasks.  The acceptance test combines the results from the Time Demand Analysis, Worst-Case Simulation, and Utilization Bound Test to make this determination.
     *   **SSD1306 Display Integration:** The display shows the results of each of the schedulability tests (Time Demand Analysis, Worst-Case Simulation, and Utilization Bound Test) for every task that is currently running in the system.
 
