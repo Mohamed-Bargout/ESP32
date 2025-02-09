@@ -3,6 +3,7 @@
 This repository contains various ESP32 projects, including a series of assignments related to real-time concepts.
 
 ## Folder Structure
+```
 ├── Real Time Concepts Course/
 │   ├── Assignment 1/
 │   │   └── main/
@@ -16,6 +17,7 @@ This repository contains various ESP32 projects, including a series of assignmen
 │   └── Assignment 4/
 │       └── main/
 │           └── main.c
+```
 
 ## Real Time Concepts Assignments
 
@@ -34,7 +36,11 @@ This section details the assignments completed as part of the "Real Time Concept
     *   **Acceptance Test:**  A crucial part of this assignment is the development of an acceptance test.  This test determines whether a new task can be safely added to the existing task set without violating the timing guarantees of any higher-priority tasks.  The acceptance test combines the results from the Time Demand Analysis, Worst-Case Simulation, and Utilization Bound Test to make this determination.
     *   **SSD1306 Display Integration:** The display shows the results of each of the schedulability tests (Time Demand Analysis, Worst-Case Simulation, and Utilization Bound Test) for every task that is currently running in the system.
 
-*   **Assignment 3:** 
+*   *   **Assignment 3: EDF Scheduling with a Deferrable Server:** This assignment implements an EDF (Earliest Deadline First) scheduler and integrates a deferrable server as well as implementing a system density test.  
+    *   **System Density Test:** The schedulability of the system is assessed using a density-based criterion. The test iterates through periodic tasks and the deferrable server, ensuring that all accepted tasks can be scheduled without violating real-time constraints.  
+    *   **Deferrable Server Implementation:** A deferrable server is added to handle aperiodic tasks efficiently. When an aperiodic task request is triggered via a button press, the server executes it within its allocated budget. If no aperiodic tasks are pending, the remaining budget is returned to the EDF scheduler.  
+    *   **SSD1306 Display Integration:** The execution of aperiodic tasks is visually represented on an SSD1306 display, where each execution triggers an animation.  
+
 *   **Assignment 4:** 
 
 ## Building and Running the Assignments
