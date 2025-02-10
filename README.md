@@ -41,7 +41,10 @@ This section details the assignments completed as part of the "Real Time Concept
     *   **Deferrable Server Implementation:** A deferrable server is added to handle aperiodic tasks efficiently. When an aperiodic task request is triggered via a button press, the server executes it within its allocated budget. If no aperiodic tasks are pending, the remaining budget is returned to the EDF scheduler.  
     *   **SSD1306 Display Integration:** The execution of aperiodic tasks is visually represented on an SSD1306 display, where each execution triggers an animation.  
 
-*   **Assignment 4:** 
+*   **Assignment 4: Immediate Ceiling Priority Protocol (ICPP):** This assignment explores priority management in real-time systems by implementing the Immediate Ceiling Priority Protocol (ICPP) in FreeRTOS.    
+    *   **Priority Elevation Implementation:** The ICPP mechanism is implemented by modifying the critical section handling. When a task locks a resource, its priority is immediately elevated to the highest priority ceiling associated with any locked resource. This prevents priority inversion and ensures correct task execution order.  
+    *   **LED & Display Feedback:** The SSD1306 display and LEDs provide real-time feedback on task execution and scheduling behavior. The LEDs indicate task states, while the display visualizes critical section usage.  
+
 
 ## Building and Running the Assignments
 
